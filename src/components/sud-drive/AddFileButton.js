@@ -70,8 +70,8 @@ export default function AddFileButton({ currentFolder }){
         </div>
         <div>
         <p  style={{position:"absolute", bottom:"3.5rem", right:"2rem", minWidth:"200px"}}><small> total d'espace utilisé </small></p>
-        {
-            <small className="text-muted"  style={{position:"absolute", bottom:"1rem", right:"3rem", minWidth:"200px"}}>Il vous reste {((1000000 - size)/10000).toFixed(4)} Mo  </small>
+        {   
+            <small className="text-muted"  style={{position:"absolute", bottom:"1rem", right:"3rem", minWidth:"200px"}}>Il vous reste {((100 - size)).toFixed(4)} Mo  </small>
         }
         </div>
     </div>
