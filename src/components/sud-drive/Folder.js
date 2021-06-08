@@ -25,6 +25,28 @@ export default function Folder({ folder }){
         })
         setOpenRename(false)
     }
+    // async function folderRename(e){
+    //     const folderId = folder.id
+    //     const folderName = folder.name
+    //     console.log(folderId)
+    //     e.preventDefault()
+    //     database.folders
+    //             .get()
+    //             .then((querySnapshot) => {
+    //                 database.folders.doc(folder.id).update({
+    //                     name: name
+    //                 })
+    //                 querySnapshot.forEach((folders) => {
+    //                     folders.data().path.forEach((item) =>{
+    //                         console.log(item.id)
+    //                         database.folders.doc(item.id).update({
+    //                             path: {name, }
+    //                         })
+    //                     })
+    //                     })
+    //                 });
+    // }
+
     return(
         <>
         <Dropdown>
