@@ -81,7 +81,7 @@ export default function AddFileButton({ currentFolder }){
         <div>
         <p  style={{position:"absolute", bottom:"3.5rem", right:"2rem", minWidth:"200px"}}><small> total d'espace utilisé </small></p>
         {   
-            <small className="text-muted"  style={{position:"absolute", bottom:"1rem", right:"3rem", minWidth:"200px"}}>Il vous reste {((100 - size)).toFixed(4)} Mo  </small>
+            <small className="text-muted"  style={{position:"absolute", bottom:"1rem", right:"3rem", minWidth:"200px"}}>Il vous reste {((100 - size)).toFixed(2)} Mo  </small>
         }
         { timeOut && uploadError && <Alert variant="danger" className="text-muted"  style={{position:"absolute", bottom:"5rem", right:"4rem", minWidth:"200px"}}>{uploadError}</Alert>}
         { timeOut && uploadSuccess && <Alert variant="success" className="text-muted"  style={{position:"absolute", bottom:"5rem", right:"4rem", minWidth:"200px"}}>{uploadSuccess}</Alert>}

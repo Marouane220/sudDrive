@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
         return auth.createUserWithEmailAndPassword(email, password).then((user) => {
             const displayName = name
             return auth.currentUser.updateProfile({ displayName,
-                                                    photoURL: 'https://i.ibb.co/Jc2yCsc/0c3b3adb1a7530892e55ef36d3be6cb8.png' })
+                                                    photoURL: 'https://firebasestorage.googleapis.com/v0/b/devoir1-1af3d.appspot.com/o/1200px-Crystal_Clear_app_Login_Manager.svg.png?alt=media&token=1e8ad994-a84a-47c4-b49a-12879426b1ff' })
         });
     }
 
